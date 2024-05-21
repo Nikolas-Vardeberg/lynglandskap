@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Headless CMS Workshop using Next.js, Sanity and Vercel<!-- omit in toc -->
 
-## Getting Started
+This is a starter repo used as a part of the Headless CMS Workshop. It walks through the steps needed to build out a statically generated website that uses [Next.js](https://nextjs.org/) for the frontend, [Sanity](https://www.sanity.io/) to handle its content and [Vercel](https://vercel.com/) to deploy to production.
 
-First, run the development server:
+Access the workshop presentation [here](https://docs.google.com/presentation/d/1L_wW6yrLEmNiVBJEPtweJorlA7yYOjbNUX4Tc9KGA6w/edit?usp=sharing), which will guide you through the steps to build out your own site! You can find the completed example by checking out the `complete-example` branch.
+
+## Topics
+
+- Intro
+
+  - What is headless architecture?
+  - What is Next.js?
+  - What is Sanity.io?
+
+- Setting up the Repo
+- Setting up Sanity.io
+  - Content modeling
+  - Querying content with GROQ
+- Setting up Next.js
+  - Dynamic routing
+  - Fetching page data
+  - Page builder
+- Deploying to production on Vercel
+
+## Running the project locally
+
+### Storybook
+
+[Storybook](https://storybook.js.org/) contains all the prebuilt components we'll be working with. To access storybook locally run:
+
+```bash
+npm run storybook
+```
+
+Navigate to http://localhost:6006.
+
+### Next.js App
+
+You can start development environment for the frontend app by running:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Navigate to http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Sanity Studio
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For this implementation, the Sanity Studio is embedded inside our Next.js app. This means that you just need to start the development environment for the frontend app and navigate to http://localhost:3000/studio.
