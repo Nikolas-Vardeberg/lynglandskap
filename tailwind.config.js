@@ -16,6 +16,16 @@ module.exports = {
         serif: 'var(--font-serif)',
         times: 'times',
       },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "3rem",
+          xl: "7rem",
+          "2xl": "8rem",
+        }
+      },
       colors: {
         primary: {
           50: '#B2B8A1',
