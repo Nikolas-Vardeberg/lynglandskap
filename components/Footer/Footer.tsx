@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-import { FooterLogo } from './FooterLogo'
 
 import { FacebookIcon, InstagramIcon } from 'lucide-react';
 
@@ -23,7 +22,7 @@ export type FooterProps = {
 
 export type Props = FooterProps
 
-export const Footer = ({ copyright, socialLinks, privacyPolicy, menu }: Props) => {
+export const Footer = ({ copyright, socialLinks, privacyPolicy }: Props) => {
 
   console.log(socialLinks)
   return (
@@ -89,3 +88,5 @@ export const Footer = ({ copyright, socialLinks, privacyPolicy, menu }: Props) =
     </footer>
   )
 }
+
+export default Footer

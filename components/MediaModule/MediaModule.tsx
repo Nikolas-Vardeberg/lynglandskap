@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Cta } from '../Cta/Cta'
 
 import ImageBox from 'components/shared/ImageBox'
+import Image from 'next/image'
 
 export type MediaModule = {
   body?: string
@@ -25,51 +26,36 @@ export const MediaModule = ({
   isDark = false,
 }: Props) => {
   return (
-    <div className={isDark ? 'bg-green-600' : 'bg-white'}>
-      <div className="container mx-auto py-48">
-        <div className="grid xl:grid-cols-2 gap-12 md:gap-36">
-          <div
-            className={`relative mx-auto self-start w-full h-[450px] sm:h-[700px] bg-red-500 ${
-              imageOnRight ? 'order-last mt-8' : ''
-            }`}
-          >
-              <ImageBox
-                width={420}
-                height={520}
-                image={image}
-                alt={imageAlt}
-                className="absolute inset-0 w-full h-full object-cover transform"
+    <div className={isDark ? 'bg-green-600' : 'bg-[#EBF2FA]'}>
+      <div className='grid grid-cols-1 md:grid-cols-2 '>
+        <div className='flex flex-col justify-between h-screen w-full text-center md:text-left py-12 px-12 md:py-20 md:container'>
+            <div>
+              <div className='flex justify-center md:justify-start'>
+                <Image
+                  src="/logo.png"
+                  alt="Lyng Langskap"
+                  height={300}
+                  width={300}
+                  draggable={false}
               />
-          </div>
-          <div className="mt-10 flex flex-col justify-center md:mt-0">
-            {heading && (
-              <h2
-                className={`font-sans text-features leading-none font-bold ${
-                  isDark ? 'text-white' : 'text-black'
-                }`}
-              >
-                {heading}
-              </h2>
-            )}
-            {body && (
-              <div
-                className={`prose mt-6 ${
-                  isDark ? 'text-white/80' : 'text-black/80'
-                }`}
-              >
-                {body}
               </div>
-            )}
-            {cta && cta.isEnabled && (
-              <div className="pt-10">
-                <Cta
-                  url={cta.url}
-                  text={cta.text}
-                  hasPrimaryCta={cta.hasPrimaryCta}
-                />
+              <div className='mt-28 space-y-8'>
+                <h1 className='text-4xl text-black'>{heading}</h1>
+                <h2 className='text-lg text-gray-500'>{body}</h2>
               </div>
-            )}
-          </div>
+            </div>
+            <div className='text-base md:text-left text-center md:text-base text-gray-500'>
+              &copy; {new Date().getFullYear()} Lyng Langskap AS. Laget av Vertio Webdesign
+            </div>
+        </div>
+        <div className='h-screen w-full'>
+          <ImageBox 
+            alt={imageAlt}
+            image={image}
+            width={1000}
+            height={1000}
+            className='h-full w-full'
+          />
         </div>
       </div>
     </div>

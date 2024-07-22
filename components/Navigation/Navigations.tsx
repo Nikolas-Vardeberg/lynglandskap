@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import * as React from 'react'
 
-import { NavLogo } from './NavLogo'
 
 import cx from "classnames"
 import { Menu } from 'lucide-react';
@@ -69,3 +68,5 @@ export const Navigation = ({ menu }: Props) => {
     </header>
   )
 }
+
+export default Navigation
