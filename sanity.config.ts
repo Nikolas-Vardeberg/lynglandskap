@@ -30,6 +30,7 @@ import quote from './sanity/schemas/objects/quote'
 import mediaModule from './sanity/schemas/objects/mediaModule'
 import rows from "./sanity/schemas/objects/rows"
 import fastlink from './sanity/schemas/objects/fastlink'
+import mediemodul from './sanity/schemas/objects/mediemodul'
 
 const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE
 
@@ -58,6 +59,7 @@ export default defineConfig({
       mediaModule,
       rows,
       fastlink,
+      mediemodul
     ],
   },
   plugins: [

@@ -51,13 +51,11 @@ export default defineType({
               type: 'string',
               name: 'role',
               title: 'Role/stilling',
-              validation: (rule) => rule.required(),
             }),
             defineField({
               type: "string",
               name: "email",
               title: "e-post",
-              validation: (rule) => rule.required(),
             })
           ],
         },

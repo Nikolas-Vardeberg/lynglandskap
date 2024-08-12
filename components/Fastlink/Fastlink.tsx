@@ -24,11 +24,11 @@ export const Fastlink = ({ hasDarkBackground, eyebrow, fastlinkImage, fastlinkIm
         <div className='grid grid-cols-1 md:grid-cols-2'>
             <div className='flex flex-col justify-center items-center md:items-start py-12 px-12 lg:px-32 xl:px-52'>
                 {eyebrow && (
-                    <h4 className='text-white text-extra-small sm:text-small'>{eyebrow}</h4>
+                    <h4 className={`${hasDarkBackground ? "text-white" : "text-black"} text-extra-small sm:text-small`}>{eyebrow}</h4>
                 )}
                 {blocks?.map((block, i) => {
                     return(
-                        <Link className='text-white hover:scale-110 duration-100' href={block.url} key={i}>
+                        <Link className={`${hasDarkBackground ? "text-white" : "text-black"} hover:scale-110 duration-100`} href={block.url} key={i}>
                             <h2 className='text-small sm:text-large'>{block.service}</h2>
                         </Link>
                     )
@@ -39,7 +39,7 @@ export const Fastlink = ({ hasDarkBackground, eyebrow, fastlinkImage, fastlinkIm
                     <ImageBox 
                         image={fastlinkImage}
                         alt={fastlinkImageAlt}
-                        className='md:w-full md:h-full object-contain'
+                        className='md:w-full md:h-full object-cover'
                     />
                 </div>
             )}

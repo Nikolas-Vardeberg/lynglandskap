@@ -6,6 +6,7 @@ import { MediaModule } from 'components/MediaModule'
 import { Quote } from 'components/Quote'
 import { Rows } from 'components/Rows'
 import { Fastlink } from "components/Fastlink/"
+import { Mediemodul } from 'components/Mediemodul'
 
 const componentsMap = {
   MainHero,
@@ -16,6 +17,7 @@ const componentsMap = {
   FeaturedText,
   Rows,
   Fastlink,
+  Mediemodul
 }
 
 export const buildComponent = ({ _type, ...props }) => {
