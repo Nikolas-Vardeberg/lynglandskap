@@ -66,7 +66,7 @@ export default defineType({
   ],
   preview: {
     select: {
-      title: 'body',
+      title: 'heading',
     },
     prepare({ title }) {
       return {

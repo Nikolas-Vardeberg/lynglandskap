@@ -34,6 +34,7 @@ export default defineType({
         defineArrayMember({ type: 'CtaBanner' }),
         defineArrayMember({ type: 'FeaturedText' }),
         defineArrayMember({ type: 'Rows' }), 
+        defineArrayMember({ type: "Fastlink"})
       ],
     }),
   ],

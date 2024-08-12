@@ -29,6 +29,7 @@ import mainHero from './sanity/schemas/objects/mainHero'
 import quote from './sanity/schemas/objects/quote'
 import mediaModule from './sanity/schemas/objects/mediaModule'
 import rows from "./sanity/schemas/objects/rows"
+import fastlink from './sanity/schemas/objects/fastlink'
 
 const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE
 
@@ -56,6 +57,7 @@ export default defineConfig({
       featuredText,
       mediaModule,
       rows,
+      fastlink,
     ],
   },
   plugins: [
