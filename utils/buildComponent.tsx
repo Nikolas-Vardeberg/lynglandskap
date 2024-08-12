@@ -4,6 +4,7 @@ import { FeaturedText } from 'components/FeaturedText'
 import { MainHero } from 'components/MainHero'
 import { MediaModule } from 'components/MediaModule'
 import { Quote } from 'components/Quote'
+import { Rows } from 'components/Rows'
 
 const componentsMap = {
   MainHero,
@@ -12,6 +13,7 @@ const componentsMap = {
   MediaModule,
   CtaBanner,
   FeaturedText,
+  Rows,
 }
 
 export const buildComponent = ({ _type, ...props }) => {

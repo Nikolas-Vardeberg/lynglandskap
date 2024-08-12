@@ -19,7 +19,7 @@ export const Quote = ({ hasDarkBackground, body, }: Props) => {
           <div
             className={`relative text-left text-2xl md:text-[40px] leading-normal ${hasDarkBackground ? 'text-white' : 'text-black'}`}
           >
-            “{body}”
+            "{body}"
           </div>
         </div>
       </div>

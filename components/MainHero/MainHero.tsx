@@ -36,7 +36,7 @@ export const MainHero = ({
              <ImageBox
                 image={heroImage}
                 alt={heroImageAlt}
-                className='md:w-full md:h-full '
+                className='md:w-full md:h-full'
               />
           </div>
         )}
