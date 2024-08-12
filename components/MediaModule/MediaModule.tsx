@@ -29,7 +29,7 @@ export const MediaModule = ({
   return (
     <div className={isDark ? 'bg-[#42A150]' : 'bg-[#ECFAEB]'}>
       <div className='grid grid-cols-1 md:grid-cols-2 '>
-        <div className='flex flex-col justify-between h-screen w-full text-center md:text-left py-12 px-12 md:py-20 md:container'>
+        <div className='flex flex-col justify-between h-full w-full text-center md:text-left py-12 px-12 md:py-20 md:container'>
             <div>
               <div className='flex justify-center md:justify-start'>
                 <Image
