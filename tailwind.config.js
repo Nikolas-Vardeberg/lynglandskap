@@ -16,6 +16,10 @@ module.exports = {
         serif: 'var(--font-serif)',
         times: 'times',
       },
+      maxWidth: {
+        "8xl": "88rem",
+        "9xl": "96rem"
+      },
       fontSize: {
         sm: "clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem)",
         base: "clamp(1rem, 0.34vw + 0.91rem, 1.19rem)",
