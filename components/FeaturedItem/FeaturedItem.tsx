@@ -1,21 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
+import ImageBox from 'components/shared/ImageBox';
 import * as React from 'react'
 
 type FeaturedItemProps = {
-  heading: string
-  body: string
+  rowsImage: any
+  rowsImageAlt: string
+  name: string
+  role: string
+  email: string
 }
 
 export type Props = FeaturedItemProps
 
-export const FeaturedItem = ({ heading, body }: Props) => {
+export const FeaturedItem = ({ rowsImage, rowsImageAlt, name, role, email }: Props) => {
   return (
-    <div>
-      <section className="pb-6">
-        <h2 className="text-xl font-bold text-primary-700">{heading}</h2>
-        {body && (
-          <div className="prose mt-3 text-base text-primary-700">{body}</div>
+    <div className=''>
+      <section className="p-0">
+        {rowsImage && (
+           <ImageBox 
+            alt={rowsImageAlt}
+            image={rowsImage}
+            className='md:w-full md:h-full object-cover'
+          />
         )}
+       <div className='space-y-2 mt-4'>
+        <h2 className="text-black text-small">{name}</h2>
+        {role && (
+          <div className="text-black text-extra-small">{role}</div>
+        )}
+        {email && (
+          <div className="text-black text-extra-small">{email}</div>
+        )}
+       </div>
+
       </section>
     </div>
   )
