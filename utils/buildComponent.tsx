@@ -5,7 +5,7 @@ import { MainHero } from 'components/MainHero'
 import { MediaModule } from 'components/MediaModule'
 import { Quote } from 'components/Quote'
 import { Rows } from 'components/Rows'
-import { Fastlink } from "components/Fastlink"
+import { Fastlink } from "components/Fastlink/"
 
 const componentsMap = {
   MainHero,

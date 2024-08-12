@@ -45,8 +45,8 @@ export default defineType({
           fields: [
             defineField({
               type: 'string',
-              name: 'tjeneste',
-              title: 'Tjeneste',
+              name: 'service',
+              title: 'Service',
               validation: (rule) => rule.required(),
             }),
             defineField({
