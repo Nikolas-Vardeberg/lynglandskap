@@ -20,7 +20,7 @@ export type Props = Fastlink
 
 export const Fastlink = ({ hasDarkBackground, eyebrow, fastlinkImage, fastlinkImageAlt, blocks}: Props) => {
   return (
-    <div className={hasDarkBackground ? 'bg-[#42A150]' : 'bg-[#ECFAEB]'}>
+    <div className={hasDarkBackground ? 'bg-green-dark' : 'bg-green-primary'}>
         <div className='grid grid-cols-1 md:grid-cols-2'>
             <div className='flex flex-col justify-center items-center md:items-start py-12 px-12 lg:px-32 xl:px-52'>
                 {eyebrow && (

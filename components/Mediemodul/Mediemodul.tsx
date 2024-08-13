@@ -1,4 +1,5 @@
 import ImageBox from 'components/shared/ImageBox';
+import Link from 'next/link';
 import * as React from 'react'
 
 type Cards = {
@@ -37,7 +38,7 @@ export const Mediemodul = ({ heading, body, cards }: Props) => {
             return(
                 <div key={i} className={`${card.hasDarkBackground? "bg-[#42A150]" : "bg-white"} grid grid-cols-1 md:grid-cols-2 mt-6`}>
                     <div
-                        className={`relative mx-auto h-[500px] w-full self-start md:mt-0 ${
+                        className={`relative mx-auto h-[300px] md:h-[500px] w-full self-start md:mt-0 ${
                         card.imageOnRight ? 'order-last mt-8' : ''
                         }`}
                     >
@@ -49,10 +50,10 @@ export const Mediemodul = ({ heading, body, cards }: Props) => {
                             className="absolute inset-0 h-full w-full object-cover"
                         />
                     </div>
-                    <div className="mt-10 flex flex-col justify-center px-20">
+                    <div className=" py-10 flex flex-col justify-center px-20">
                         {heading && (
                         <h2
-                            className={`text-large ${
+                            className={`text-small md:text-large ${
                             card.hasDarkBackground ? 'text-white' : 'text-black'
                             }`}
                         >
@@ -60,13 +61,14 @@ export const Mediemodul = ({ heading, body, cards }: Props) => {
                         </h2>
                         )}
                         {body && (
-                        <div
-                            className={`prose mt-6 text-base ${
+                        <Link
+                            href="/kontakt"
+                            className={`mt-6 text-base ${
                             card.hasDarkBackground ? 'text-white' : 'text-black'
                             }`}
                         >
                             {card.body}
-                        </div>
+                        </Link>
                         )}
                     </div>
                 </div>

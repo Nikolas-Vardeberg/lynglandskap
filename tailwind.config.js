@@ -46,11 +46,17 @@ module.exports = {
         }
       },
       colors: {
+        green: {
+          primary: "#f0f8ed",
+          dark: "#42A150",
+          tan: "#D1FFCE",
+        },
         primary: {
           50: '#B2B8A1',
           200: '#7C8464',
           500: '#646B4B',
           700: '#4B5331',
+
         },
         secondary: {
           100: '#EFEBE6',

@@ -18,7 +18,7 @@ export const MainHero = ({
   heroImageAlt,
 }: Props) => {
   return (
-    <div className='bg-[#f0f8ed] py-10 pt-20 px-8 md:px-20'>
+    <div className='bg-green-primary py-10 pt-20 px-8 md:px-20'>
        <div className='max-4xl mx-auto space-y-8'>
           {heading && (
             <h1 className='text-[30px] md:text-[40px] text-black'>

@@ -13,7 +13,7 @@ export type Props = Quote
 
 export const Quote = ({ hasDarkBackground, body, }: Props) => {
   return (
-    <div className={hasDarkBackground ? 'bg-[#42A150]' : 'bg-[#D1FFCE]'}>
+    <div className={hasDarkBackground ? 'bg-green-dark' : 'bg-green-tan'}>
       <div className="max-w-9xl px-8 py-24 sm:px-36 md:py-24">
         <div className="relative">
           <div

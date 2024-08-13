@@ -20,15 +20,15 @@ export type Props = Rows
 
 export const Rows = ({ heading, body, blocks }: Props) => {
   return (
-    <div className='bg-[#D1FFCE] py-10 pt-20 px-8 md:px-20'>
+    <div className='bg-green-tan py-10 pt-20 px-8 md:px-20'>
     <div className='max-4xl mx-auto space-y-8'>
        {heading && (
-         <h1 className='text-[30px] md:text-[40px] text-black'>
+         <h1 className='text-small md:text-[40px] text-black'>
            {heading}
          </h1>
        )}
      {body && (
-       <h4 className='max-w-7xl text-left text-black text-[20px]   md:text-[30px]'>
+       <h4 className='max-w-7xl text-left text-black text-extra-small md:text-small'>
          {body}
        </h4>
      )}
