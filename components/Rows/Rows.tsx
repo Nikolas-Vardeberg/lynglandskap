@@ -23,9 +23,7 @@ export const Rows = ({ heading, body, blocks }: Props) => {
     <div className='bg-green-tan py-10 pt-20 px-8 md:px-20'>
     <div className='max-4xl mx-auto space-y-8'>
        {heading && (
-         <h1 className='text-small md:text-[40px] text-black'>
-           {heading}
-         </h1>
+        <h2 className='text-small sm:text-medium text-black'><span className='mr-4'>&rarr;</span>{heading}</h2>
        )}
      {body && (
        <h4 className='max-w-7xl text-left text-black text-extra-small md:text-small'>

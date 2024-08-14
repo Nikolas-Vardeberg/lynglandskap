@@ -21,22 +21,20 @@ export type Props = Mediemodul
 
 export const Mediemodul = ({ heading, body, cards }: Props) => {
   return (
-    <div className='bg-[#D1FFCE] py-10 pt-20 px-8 md:px-20'>
+    <div className='bg-green-tan py-10 pt-20 px-8 md:px-20'>
         <div className='max-4xl mx-auto space-y-8'>
         {heading && (
-            <h1 className='text-[30px] md:text-[40px] text-black'>
-            {heading}
-            </h1>
+            <h2 className='text-small sm:text-medium text-black'><span className='mr-4'>&rarr;</span>{heading}</h2>
         )}
         {body && (
-        <h4 className='max-w-7xl text-left text-black text-[20px] md:text-[30px]'>
+        <h4 className='max-w-7xl text-left text-black text-extra-small md:text-small'>
             {body}
         </h4>
         )}
         </div>
         {cards?.map((card, i) => {
             return(
-                <div key={i} className={`${card.hasDarkBackground? "bg-[#42A150]" : "bg-white"} grid grid-cols-1 md:grid-cols-2 mt-6`}>
+                <div key={i} className={`${card.hasDarkBackground? "bg-green-dark" : "bg-white"} grid grid-cols-1 md:grid-cols-2 mt-6`}>
                     <div
                         className={`relative mx-auto h-[300px] md:h-[500px] w-full self-start md:mt-0 ${
                         card.imageOnRight ? 'order-last mt-8' : ''

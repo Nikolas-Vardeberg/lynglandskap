@@ -29,7 +29,7 @@ export const Fastlink = ({ hasDarkBackground, eyebrow, fastlinkImage, fastlinkIm
                 {blocks?.map((block, i) => {
                     return(
                         <Link className={`${hasDarkBackground ? "text-white" : "text-black"} hover:scale-110 duration-100`} href={block.url} key={i}>
-                            <h2 className='text-small sm:text-large'>{block.service}</h2>
+                            <h2 className='text-small sm:text-large'><span className='mr-4'>&rarr;</span>{block.service}</h2>
                         </Link>
                     )
                 })}

@@ -21,22 +21,20 @@ export const MainHero = ({
     <div className='bg-green-primary py-10 pt-20 px-8 md:px-20'>
        <div className='max-4xl mx-auto space-y-8'>
           {heading && (
-            <h1 className='text-[30px] md:text-[40px] text-black'>
-              {heading}
-            </h1>
+           <h1 className='text-small sm:text-large text-black'><span className='mr-4'>&rarr;</span>{heading}</h1>
           )}
         {body && (
-          <h4 className='max-w-7xl text-left text-black text-[20px]   md:text-[30px]'>
-            {body}
-          </h4>
+          <div className='max-w-7xl self-start'>
+            <h4 className='text-black text-extra-small md:text-small'>{body}</h4>
+          </div>
         )}
         </div>
         {heroImage && (
-          <div className='w-full mt-12 text-black'>
+          <div className='w-full mt-12'>
              <ImageBox
                 image={heroImage}
                 alt={heroImageAlt}
-                className='md:w-full md:h-full'
+                className='md:w-full md:h-full text-black'
               />
           </div>
         )}

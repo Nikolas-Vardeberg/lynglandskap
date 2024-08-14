@@ -15,16 +15,20 @@ export type Props = FeaturedItemProps
 export const FeaturedItem = ({ rowsImage, rowsImageAlt, name, role, email }: Props) => {
   return (
     <div className=''>
-      <section className="p-0">
+      <div className="p-0">
         {rowsImage && (
-           <ImageBox 
-            alt={rowsImageAlt}
-            image={rowsImage}
-            className='md:w-full md:h-full object-cover'
-          />
+          <div className="overflow-hidden w-full h-full">
+            <ImageBox 
+              alt={rowsImageAlt}
+              image={rowsImage}
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-125"
+            />
+          </div>
         )}
        <div className='space-y-2 mt-4'>
-        <h2 className="text-black text-small">{name}</h2>
+        {name && (
+          <h2 className="text-black text-small">{name}</h2>
+        )}
         {role && (
           <div className="text-black text-extra-small">{role}</div>
         )}
@@ -32,8 +36,7 @@ export const FeaturedItem = ({ rowsImage, rowsImageAlt, name, role, email }: Pro
           <div className="text-black text-extra-small">{email}</div>
         )}
        </div>
-
-      </section>
+      </div>
     </div>
   )
 }
