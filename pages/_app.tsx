@@ -4,6 +4,7 @@ import { PreviewBanner } from 'components/preview/PreviewBanner'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import { Footer } from 'components/Footer'
 
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -22,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       {pageProps?.preview && <PreviewBanner />}
       <Component {...pageProps} />
+      {!isSanityStudio && <Footer {...footer} />}
     </>
   )
 }

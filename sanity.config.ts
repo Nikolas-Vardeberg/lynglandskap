@@ -33,6 +33,7 @@ import fastlink from './sanity/schemas/objects/fastlink'
 import mediemodul from './sanity/schemas/objects/mediemodul'
 import image from "./sanity/schemas/objects/image"
 import text from './sanity/schemas/objects/text'
+import list from './sanity/schemas/objects/list'
 
 const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE
 
@@ -63,7 +64,8 @@ export default defineConfig({
       fastlink,
       mediemodul,
       image,
-      text
+      text,
+      list,
     ],
   },
   plugins: [

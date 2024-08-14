@@ -38,6 +38,7 @@ export default defineType({
         defineArrayMember({ type: "Mediemodul"}),
         defineArrayMember({ type: "Image" }),
         defineArrayMember({ type: "Text" }),
+        defineArrayMember({ type: "List" }),
       ],
     }),
   ],

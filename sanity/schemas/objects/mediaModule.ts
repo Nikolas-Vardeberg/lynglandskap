@@ -1,4 +1,4 @@
-import { NewspaperClipping } from 'phosphor-react'
+import { Link, NewspaperClipping, RadioButton } from 'phosphor-react'
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
@@ -51,6 +51,32 @@ export default defineType({
       name: 'imageAlt',
       title: 'Image Alt',
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      type: 'array',
+      name: 'link',
+      title: 'Link',
+      of: [
+        {
+          type: 'object',
+          name: 'link',
+          icon: Link,
+          fields: [
+            defineField({
+              type: 'string',
+              name: 'text',
+              title: 'Text',
+              validation: (rule) => rule.required(),
+            }),
+            defineField({
+              type: 'string',
+              name: 'url',
+              title: 'Url',
+              validation: (rule) => rule.required(),
+            }),
+          ],
+        },
+      ],
     }),
   ],
   preview: {

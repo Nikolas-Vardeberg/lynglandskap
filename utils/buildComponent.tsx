@@ -9,6 +9,7 @@ import { Fastlink } from "components/Fastlink/"
 import { Mediemodul } from 'components/Mediemodul'
 import { Image } from "components/Image"
 import { Text } from 'components/Text'
+import { List } from 'components/List'
 
 const componentsMap = {
   MainHero,
@@ -21,7 +22,8 @@ const componentsMap = {
   Fastlink,
   Mediemodul,
   Image,
-  Text
+  Text,
+  List
 }
 
 export const buildComponent = ({ _type, ...props }) => {

@@ -1,4 +1,4 @@
-import { Newspaper, Star } from 'phosphor-react'
+import { Link, Newspaper, Star } from 'phosphor-react'
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
@@ -68,6 +68,32 @@ export default defineType({
                 name: 'imageAlt',
                 title: 'Image Alt',
                 validation: (rule) => rule.required(),
+              }),
+              defineField({
+                type: 'array',
+                name: 'textlink',
+                title: 'Textlink',
+                of: [
+                  {
+                    type: 'object',
+                    name: 'textlink',
+                    icon: Link,
+                    fields: [
+                      defineField({
+                        type: 'string',
+                        name: 'text',
+                        title: 'Text',
+                        validation: (rule) => rule.required(),
+                      }),
+                      defineField({
+                        type: 'string',
+                        name: 'url',
+                        title: 'Url',
+                        validation: (rule) => rule.required(),
+                      }),
+                    ],
+                  },
+                ],
               }),
             ],
           },
