@@ -7,7 +7,8 @@
     "lint": "next lint -- --ignore-path .gitignore",
     "lint:fix": "npm run format && npm run lint -- --fix",
     "start": "next start",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "postbuild": "next-sitemap"
   },
   "prettier": {
     "semi": false,
@@ -28,6 +29,7 @@
     "next": "13.3.1",
     "next-google-fonts": "2.2.0",
     "next-sanity": "4.2.0",
+    "next-sitemap": "^4.2.3",
     "phosphor-react": "^1.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.lynglandskap.no/
+
+# Sitemaps
+Sitemap: https://www.lynglandskap.no/sitemap.xml
