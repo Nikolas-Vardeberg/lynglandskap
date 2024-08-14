@@ -36,6 +36,8 @@ export default defineType({
         defineArrayMember({ type: 'Rows' }), 
         defineArrayMember({ type: "Fastlink" }),
         defineArrayMember({ type: "Mediemodul"}),
+        defineArrayMember({ type: "Image" }),
+        defineArrayMember({ type: "Text" }),
       ],
     }),
   ],

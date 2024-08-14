@@ -7,6 +7,8 @@ import { Quote } from 'components/Quote'
 import { Rows } from 'components/Rows'
 import { Fastlink } from "components/Fastlink/"
 import { Mediemodul } from 'components/Mediemodul'
+import { Image } from "components/Image"
+import { Text } from 'components/Text'
 
 const componentsMap = {
   MainHero,
@@ -17,7 +19,9 @@ const componentsMap = {
   FeaturedText,
   Rows,
   Fastlink,
-  Mediemodul
+  Mediemodul,
+  Image,
+  Text
 }
 
 export const buildComponent = ({ _type, ...props }) => {
