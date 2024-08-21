@@ -55,11 +55,6 @@ export default defineConfig({
       // Objects
       mainHero,
       quote,
-      featuredItems,
-      cta,
-      ctaBanner,
-      featuredText,
-      mediaModule,
       rows,
       fastlink,
       mediemodul,

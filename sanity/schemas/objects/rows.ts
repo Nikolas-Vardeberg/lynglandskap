@@ -1,4 +1,4 @@
-import { Rows, Star } from 'phosphor-react'
+import { Rows, Star, TextHTwo } from 'phosphor-react'
 import { defineField, defineType } from 'sanity'
 
 export default defineType({
@@ -25,7 +25,7 @@ export default defineType({
       of: [
         {
           type: 'object',
-          name: 'featuredItem',
+          name: 'grid',
           icon: Star,
           fields: [
             defineField({
@@ -34,12 +34,12 @@ export default defineType({
                 hotspot: true,
               },
               name: 'rowsImage',
-              title: 'Person bilde',
+              title: 'Bilde',
             }),
             defineField({
               type: 'string',
               name: 'rowsImageAlt',
-              title: 'Rows Image Alt',
+              title: 'Bilde Alt',
             }),
             defineField({
               type: 'string',
@@ -48,14 +48,23 @@ export default defineType({
               validation: (rule) => rule.required(),
             }),
             defineField({
-              type: 'string',
-              name: 'role',
-              title: 'Role/stilling',
-            }),
-            defineField({
-              type: "string",
-              name: "email",
-              title: "e-post",
+              type: "array",
+              name: "bio",
+              title: "Bio",
+              of: [
+                {
+                  type: 'object',
+                  name: 'bio_text',
+                  icon: Star,
+                  fields: [
+                    defineField({
+                      type: "string",
+                      title: "Text",
+                      name: "bioText",
+                    })
+                  ]
+                }
+              ]
             })
           ],
         },
