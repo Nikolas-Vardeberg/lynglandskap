@@ -18,6 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       {!isSanityStudio && (
         <Head>
           <title>{pageProps?.page?.title}</title>
+          <link rel="icon" href='/favicon-1.png' />
         </Head>
       )}
 
