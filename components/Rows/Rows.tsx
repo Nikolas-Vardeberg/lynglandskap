@@ -38,7 +38,7 @@ export const Rows = ({ heading, body, blocks }: Props) => {
           </p>
         )}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-6">
         {blocks?.map((block, i) => (
           <div key={i} className="flex flex-col space-y-4">
             <div className="overflow-hidden w-full h-full">
@@ -49,11 +49,11 @@ export const Rows = ({ heading, body, blocks }: Props) => {
               />
             </div>
             {block.name && (
-              <h4 className=" text-black text-small">{block.name}</h4>
+              <h4 className=" text-black text-extra-small 2xl:text-small">{block.name}</h4>
             )}
             <div className="space-y-2">
               {block.bio?.map((bio, b) => (
-                <p key={b} className="text-extra-small">
+                <p key={b} className="text-extra-small text-black">
                   {bio.bioText}
                 </p>
               ))}

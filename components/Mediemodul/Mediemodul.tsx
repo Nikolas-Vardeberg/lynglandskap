@@ -40,7 +40,7 @@ export const Mediemodul = ({ heading, body, cards, textlink }: Props) => {
             </div>
             {cards?.map((card, i) => {
                 return(
-                    <div key={i} className={`${card.hasDarkBackground? "bg-green-dark" : "bg-white"} grid grid-cols-1 md:grid-cols-2 mt-6`}>
+                    <div key={i} className={`${card.hasDarkBackground? "bg-green-dark" : "bg-white"} grid grid-cols-1 lg:grid-cols-2 mt-6`}>
                         <div
                             className={`relative mx-auto h-[300px] md:h-[500px] w-full self-start md:mt-0 ${
                             card.imageOnRight ? 'order-last mt-8' : ''
@@ -57,7 +57,7 @@ export const Mediemodul = ({ heading, body, cards, textlink }: Props) => {
                         <div className=" py-10 flex flex-col justify-center px-20">
                             {heading && (
                             <h2
-                                className={`text-small text-center md:text-left xl:text-large mb-4 ${
+                                className={`text-small text-center lg:text-left lg:text-medium 2xl:text-large mb-4 ${
                                 card.hasDarkBackground ? 'text-white' : 'text-black'
                                 }`}
                             >
@@ -66,7 +66,7 @@ export const Mediemodul = ({ heading, body, cards, textlink }: Props) => {
                             )}
                             {card.textlink?.map((links, i) => {
                                 return(
-                                   <Link href={links.url} className='text-black text-center md:text-left text-extra-small md:text-small'>
+                                   <Link href={links.url} className='text-black text-center lg:text-left text-extra-small lg:text-small hover:text-green-dark'>
                                         {links.text}
                                    </Link>
                                 )
