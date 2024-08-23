@@ -21,7 +21,7 @@ export const Navigation = ({ menu }: Props) => {
     <header className='px-10 bg-green-dark items-center py-5  text-white'>
           <div>
           {menu && (
-            <ul className='hidden sm:flex sm:flex-row gap-8'>
+            <ul className='flex flex-col sm:flex-row  gap-8'>
               {menu.map((item) => {
                 return(
                   <li key={item._key}>
