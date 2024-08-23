@@ -28,7 +28,7 @@ export default defineType({
   ],
   preview: {
     select: {
-      title: 'Text',
+      title: 'body',
       media: 'Text',
     },
     prepare({ title, media }) {

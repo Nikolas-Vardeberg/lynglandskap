@@ -23,7 +23,7 @@ export default defineType({
   ],
   preview: {
     select: {
-      title: 'Image',
+      title: 'imageAlt',
       media: 'image',
     },
     prepare({ title, media }) {

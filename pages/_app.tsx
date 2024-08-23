@@ -5,6 +5,8 @@ import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { Footer } from 'components/Footer'
+import sanityCli from 'sanity.cli'
+import { Navigation } from 'components/Navigation'
 
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -23,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
       )}
 
       {pageProps?.preview && <PreviewBanner />}
+      {!isSanityStudio && <Navigation menu={navigation?.menu} />}
       <Component {...pageProps} />
       {!isSanityStudio && <Footer {...footer} />}
     </>
