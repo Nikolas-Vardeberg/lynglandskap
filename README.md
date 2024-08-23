@@ -24,16 +24,6 @@ Access the workshop presentation [here](https://docs.google.com/presentation/d/1
 
 ## Running the project locally
 
-### Storybook
-
-[Storybook](https://storybook.js.org/) contains all the prebuilt components we'll be working with. To access storybook locally run:
-
-```bash
-npm run storybook
-```
-
-Navigate to http://localhost:6006.
-
 ### Next.js App
 
 You can start development environment for the frontend app by running:
