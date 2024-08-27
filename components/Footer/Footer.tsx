@@ -17,7 +17,7 @@ export const Footer = ({ copyright }: Props) => {
   return (
     <footer>
       <Link href="https://vertio.no">
-        <p>&copy;{copyright}</p>
+        <p>&copy; {new Date().getFullYear()} {copyright}</p>
       </Link>
     </footer>
   )

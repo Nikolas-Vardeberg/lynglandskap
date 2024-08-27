@@ -38,7 +38,7 @@ export const Rows = ({ heading, body, blocks }: Props) => {
           </p>
         )}
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-6">
+      <div className={`mt-6 gap-16 grid grid-cols-1 justify-between ${blocks.length === 2 ? "lg:grid-cols-2" : "grid-cols-1"} ${blocks.length === 3 ? "lg:grid-cols-3" : "grid-cols-1"}`}>
         {blocks?.map((block, i) => (
           <div key={i} className="flex flex-col space-y-4">
             <div className="overflow-hidden w-full h-full">
