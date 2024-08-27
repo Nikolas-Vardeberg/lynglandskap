@@ -31,6 +31,9 @@ import text from './sanity/schemas/objects/text'
 import list from './sanity/schemas/objects/list'
 import blog from './sanity/schemas/documents/blog'
 import service from './sanity/schemas/documents/service'
+import normalText from "./sanity/schemas/objects/normalText"
+
+
 
 const title = process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE
 
@@ -60,6 +63,7 @@ export default defineConfig({
       image,
       text,
       list,
+      normalText,
     ],
   },
   plugins: [

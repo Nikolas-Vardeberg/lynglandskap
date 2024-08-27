@@ -42,7 +42,7 @@ export default defineType({
     select: {
       title: 'slug.current',
     },
-    prepare({ title }) {
+    prepare({ title, }) {
       return {
         subtitle: 'Page',
         title,

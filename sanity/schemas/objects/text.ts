@@ -15,14 +15,9 @@ export default defineType({
         validation: (rule) => rule.required(),
       }),
       defineField({
-        type: 'string',
-        name: 'heading',
-        title: 'Heading',
-      }),
-      defineField({
-        type: 'text',
-        name: 'body',
-        title: 'Body',
+        type: 'normalText',
+        name: 'text',
+        title: 'Text',
         validation: (rule) => rule.required(),
       }),
   ],
