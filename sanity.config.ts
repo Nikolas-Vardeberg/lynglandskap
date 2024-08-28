@@ -31,7 +31,6 @@ import text from './sanity/schemas/objects/text'
 import list from './sanity/schemas/objects/list'
 import blog from './sanity/schemas/documents/blog'
 import service from './sanity/schemas/documents/service'
-import normalText from "./sanity/schemas/objects/normalText"
 
 
 
@@ -63,7 +62,6 @@ export default defineConfig({
       image,
       text,
       list,
-      normalText,
     ],
   },
   plugins: [

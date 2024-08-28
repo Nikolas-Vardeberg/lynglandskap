@@ -9,13 +9,13 @@ import { List } from 'components/List'
 
 const componentsMap = {
   MainHero,
-  Quote,
-  Rows,
-  Fastlink,
-  Mediemodul,
-  Image,
-  Text,
-  List
+ // Quote,
+  //Rows,
+  //Fastlink,
+  //Mediemodul,
+  //Image,
+  //Text,
+  //List
 }
 
 export const buildComponent = ({ _type, ...props }) => {

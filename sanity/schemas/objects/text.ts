@@ -15,11 +15,16 @@ export default defineType({
         validation: (rule) => rule.required(),
       }),
       defineField({
-        type: 'normalText',
-        name: 'text',
-        title: 'Text',
-        validation: (rule) => rule.required(),
-      }),
+        type: "array",
+        name: "content",
+        title: "Content",
+        of: [
+          {
+            type: "block"
+          }
+        ]
+      })
+
   ],
   preview: {
     select: {
